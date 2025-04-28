@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Debbie!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e0eafc), url('images/background.png');
+      background-size: cover;
+      background-position: center;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+     font-size: 1rem;
+    }
+    header {
+      background: #6c63ff;
+      color: white;
+      padding: 20px 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .slideshow-container {
+      position: relative;
+      max-height: 100%;
+      width: 100%;
+      margin: auto;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    .mySlides {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.5s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    @media (min-width: 768px) {
+            body {
+                font-size: 1.2rem;
+            }
+            header h1 {
+                font-size: 2.5rem;
+            }
+            section h2 {
+                font-size: 2rem;
+            }
+        }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Happy Birthday Debbie!</h1>
+</header>
+
+<section class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="images/debbie1.jpg" alt="Birthday celebration image 1" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/debbie2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/debbie3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/debbie4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/debbie5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/debbie6.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</section>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<section class="message">
+  <h2>Birthday Message</h2>
+  <p>Happy Birthday Sis, thank you for everything you do and I wish you all your heart desires. I wish you heavenly blessings, and you'll live longer. From your lovely and stubborn brother, DË-KÎÑG.</p>
+</section>
+
+<section>
+  <h2>Birthday Song</h2>
+  <audio controls autoplay>
+    <source src="audio/birthday_song.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</section>
+
+<section class="lyrics">
+  <h2>Lyrics</h2>
+  <p id="line1" style="display:none;">System online — it's your day,</p>
+  <p id="line2" style="display:none;">Debbie's code is slayin' the game,</p>
+  <p id="line3" style="display:none;">BIOS loaded, lights all green,</p>
+  <p id="line4" style="display:none;">Tech queen born to reign supreme.</p>
+  <p id="line5" style="display:none;">Repeat.</p>
+  <p id="line6" style="display:none;">Chorus: Happy birthday, Debbie,</p>
+  <p id="line7" style="display:none;">You're our techie baby,</p>
+  <p id="line8" style="display:none;">Booting joy and sunshine</p>
+  <p id="line9" style="display:none;">Shine bright like a mainscreen!</p>
+  <p id="line10" style="display:none;">Repeat.</p>
+  <p id="line11" style="display:none;">Bridge: No bugs, no stress today,</p>
+  <p id="line12" style="display:none;">Just vibes and coffee trays,</p>
+  <p id="line13" style="display:none;">From me to you with love</p>
+  <p id="line14" style="display:none;">This song’s your upgrade 💙</p>
+  <p id="line15" style="display:none;">Back to Chorus</p>
+  <p id="line16" style="display:none;">Happy Birthday Momma 😘</p>
+</section>
+
+<section class="quote">
+  <h2>Tech Queen's Quote</h2>
+  <p>"Keep coding your dreams, Debbie — the world is your canvas!"</p>
+</section>
+
+<footer>
+  <p>Made with love by DË-KÎÑG</p>
+</footer>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+ 
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+  
+  
+  function autoSlide() {
+    slideIndex++;
+    showSlides(slideIndex);
+  }
+  
+
+  setInterval(autoSlide, 5000);
+  
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+
+  document.querySelector('audio').play();
+  
+  function displayLyrics() {
+    const lyrics = [
+        "line1", "line2", "line3", "line4",
+        "line5", "line6", "line7", "line8",
+        "line9", "line10", "line11",
+        "line12", "line13", "line14",
+        "line15", "line16"
+    ];
+    
+    lyrics.forEach((line, index) => {
+        setTimeout(() => {
+            document.getElementById(line).style.display = "block";
+        }, index * 000);
+    });
+}
+  
+  document.querySelector('audio').addEventListener('play', displayLyrics);
+</script>
+
+</body>
+</html>
